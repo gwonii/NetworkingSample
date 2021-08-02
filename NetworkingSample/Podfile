@@ -1,0 +1,50 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Common' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Common
+  pod 'SwiftyBeaver', '~> 1.9.0'
+
+end
+
+
+target 'Domain' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Domain
+
+end
+
+target 'Data' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Domain
+  pod 'RxSwift', '~> 6.2.0'
+  pod 'Alamofire', '~> 5.2'
+  pod 'RxAlamofire', '~> 6.1.0'
+
+end
+
+target 'NetworkingSample' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for NetworkingSample
+  pod 'RxSwift', '~> 6.2.0'
+  pod 'RxCocoa', '~> 6.2.0'
+
+  target 'NetworkingSampleTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'NetworkingSampleUITests' do
+    # Pods for testing
+  end
+
+end
